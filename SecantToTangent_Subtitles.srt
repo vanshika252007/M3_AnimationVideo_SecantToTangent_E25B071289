@@ -1,0 +1,448 @@
+1
+00:00:00,100 --> 00:00:01,883
+How does a secant line become a tangent?
+
+2
+00:00:02,200 --> 00:00:04,100
+Let us zoom in, and watch the limit take
+
+3
+00:00:04,100 --> 00:00:04,483
+shape.
+
+4
+00:00:08,100 --> 00:00:09,717
+Picture a car moving down a road.
+
+5
+00:00:10,033 --> 00:00:13,433
+Over a whole trip, average speed is straightforward: distance
+
+6
+00:00:13,450 --> 00:00:14,433
+divided by time.
+
+7
+00:00:14,750 --> 00:00:16,967
+But a speedometer answers a different question.
+
+8
+00:00:17,283 --> 00:00:19,233
+How fast is the car moving right now, at
+
+9
+00:00:19,250 --> 00:00:20,183
+this exact instant?
+
+10
+00:00:20,500 --> 00:00:22,650
+To find out, zoom in on its position as
+
+11
+00:00:22,650 --> 00:00:23,467
+time passes.
+
+12
+00:00:23,783 --> 00:00:26,800
+A secant compares two nearby positions, and its slope
+
+13
+00:00:26,833 --> 00:00:28,383
+gives the average rate of change.
+
+14
+00:00:28,700 --> 00:00:31,533
+Shrink the time interval toward zero, and that secant
+
+15
+00:00:31,550 --> 00:00:34,550
+slope approaches the instantaneous rate, the derivative.
+
+16
+00:00:34,867 --> 00:00:36,617
+Now let us see the same idea right on
+
+17
+00:00:36,633 --> 00:00:37,100
+a curve.
+
+18
+00:00:40,100 --> 00:00:42,883
+Start with f of x equals x squared, a
+
+19
+00:00:42,900 --> 00:00:44,000
+familiar parabola.
+
+20
+00:00:44,300 --> 00:00:45,733
+Fix A at the point one, one.
+
+21
+00:00:46,067 --> 00:00:48,817
+The first coordinate is x; the second is the
+
+22
+00:00:48,833 --> 00:00:49,717
+function value.
+
+23
+00:00:50,033 --> 00:00:51,483
+Now place B at three, nine.
+
+24
+00:00:51,800 --> 00:00:53,150
+Both points lie on the curve.
+
+25
+00:00:53,467 --> 00:00:55,383
+A straight line through two points of a curve
+
+26
+00:00:55,400 --> 00:00:56,083
+is a secant.
+
+27
+00:00:56,417 --> 00:00:58,983
+Its slope is rise over run: change in output
+
+28
+00:00:58,983 --> 00:01:00,333
+divided by change in input.
+
+29
+00:01:00,650 --> 00:01:03,233
+From A to B, the rise is nine minus
+
+30
+00:01:03,233 --> 00:01:04,150
+one, or eight.
+
+31
+00:01:04,467 --> 00:01:06,450
+The run is three minus one, or two.
+
+32
+00:01:06,767 --> 00:01:08,783
+Eight divided by two gives slope four.
+
+33
+00:01:09,100 --> 00:01:11,150
+This is average change across the interval.
+
+34
+00:01:11,483 --> 00:01:13,200
+Next, B will move closer to A.
+
+35
+00:01:20,100 --> 00:01:21,817
+Name the horizontal gap h.
+
+36
+00:01:22,117 --> 00:01:24,700
+Then B has x coordinate one plus h, and
+
+37
+00:01:24,717 --> 00:01:26,933
+height the quantity one plus h, squared.
+
+38
+00:01:27,250 --> 00:01:29,867
+The vertical rise is f of one plus h,
+
+39
+00:01:30,200 --> 00:01:31,283
+minus f of one.
+
+40
+00:01:31,600 --> 00:01:34,650
+At first, h equals two, so the slope is
+
+41
+00:01:34,650 --> 00:01:35,033
+four.
+
+42
+00:01:35,350 --> 00:01:37,683
+Now watch purple B slide along the blue curve
+
+43
+00:01:37,700 --> 00:01:38,150
+toward A.
+
+44
+00:01:38,467 --> 00:01:40,933
+The pink secant pivots about yellow A, while the
+
+45
+00:01:40,933 --> 00:01:42,367
+horizontal bracket shrinks.
+
+46
+00:01:42,700 --> 00:01:45,300
+At h equals one, the slope is three.
+
+47
+00:01:45,617 --> 00:01:47,767
+At h equals one half, it is two point
+
+48
+00:01:47,783 --> 00:01:48,217
+five.
+
+49
+00:01:48,533 --> 00:01:50,117
+At one tenth, two point one.
+
+50
+00:01:50,433 --> 00:01:52,583
+At one hundredth, two point zero one.
+
+51
+00:01:52,900 --> 00:01:53,583
+See the pattern?
+
+52
+00:01:53,917 --> 00:01:55,417
+Every value approaches two.
+
+53
+00:01:55,733 --> 00:01:58,300
+The vertical rise shrinks too, but the ratio of
+
+54
+00:01:58,300 --> 00:02:00,450
+rise to run settles toward a steady value.
+
+55
+00:02:00,767 --> 00:02:03,467
+For every nonzero h, A and B are still
+
+56
+00:02:03,483 --> 00:02:06,050
+distinct, and the secant has an ordinary slope.
+
+57
+00:02:06,367 --> 00:02:08,417
+We never set h to zero in that fraction.
+
+58
+00:02:08,733 --> 00:02:11,117
+Instead, we ask what the slopes approach as B
+
+59
+00:02:11,117 --> 00:02:12,633
+gets as close to A as we like.
+
+60
+00:02:12,950 --> 00:02:13,967
+Their limit is two.
+
+61
+00:02:14,283 --> 00:02:16,033
+The slopes do not need to equal two yet;
+
+62
+00:02:16,450 --> 00:02:18,167
+only their limiting value is two.
+
+63
+00:02:30,100 --> 00:02:32,350
+Here is the algebra that explains the motion.
+
+64
+00:02:32,667 --> 00:02:34,817
+The secant slope m is f of one plus
+
+65
+00:02:34,900 --> 00:02:37,967
+h, minus f of one, all divided by h.
+
+66
+00:02:38,267 --> 00:02:41,017
+Substituting f of x equals x squared gives the
+
+67
+00:02:41,033 --> 00:02:45,017
+quantity one plus h, squared, minus one, over h.
+
+68
+00:02:45,233 --> 00:02:48,100
+Expand the square: one plus two h plus h
+
+69
+00:02:48,117 --> 00:02:50,350
+squared, minus one, over h.
+
+70
+00:02:50,667 --> 00:02:52,767
+The positive one and the negative one cancel.
+
+71
+00:02:53,083 --> 00:02:55,783
+That leaves two h plus h squared, all over
+
+72
+00:02:55,800 --> 00:02:56,117
+h.
+
+73
+00:02:56,367 --> 00:02:58,717
+Factor h from the numerator to get h times
+
+74
+00:02:58,733 --> 00:03:00,417
+two plus h, over h.
+
+75
+00:03:00,733 --> 00:03:03,383
+Since h is not zero, cancel the common h.
+
+76
+00:03:03,700 --> 00:03:05,600
+Now m equals two plus h.
+
+77
+00:03:05,917 --> 00:03:08,850
+This cancellation is valid for nonzero h only.
+
+78
+00:03:09,167 --> 00:03:11,767
+The original fraction at h equals zero would be
+
+79
+00:03:11,767 --> 00:03:13,117
+zero divided by zero.
+
+80
+00:03:13,433 --> 00:03:15,650
+Simplify first; then take the limit.
+
+81
+00:03:15,967 --> 00:03:18,967
+As h approaches zero, two plus h approaches two.
+
+82
+00:03:19,283 --> 00:03:21,533
+Therefore the derivative f prime of one is two.
+
+83
+00:03:21,867 --> 00:03:25,167
+Geometrically, two is the secant slopes' limiting value.
+
+84
+00:03:30,100 --> 00:03:31,450
+Now watch B approach A.
+
+85
+00:03:31,767 --> 00:03:34,433
+The pink secant pivots smoothly into a green tangent,
+
+86
+00:03:34,750 --> 00:03:36,483
+the line with the curve's direction at A.
+
+87
+00:03:36,800 --> 00:03:37,700
+Its slope is two.
+
+88
+00:03:38,017 --> 00:03:40,350
+On the slope triangle, one unit right is a
+
+89
+00:03:40,350 --> 00:03:42,633
+run of one; two units up is a rise
+
+90
+00:03:42,633 --> 00:03:43,150
+of two.
+
+91
+00:03:43,467 --> 00:03:46,483
+Use point slope form: y minus one equals two
+
+92
+00:03:46,483 --> 00:03:47,850
+times x minus one.
+
+93
+00:03:48,167 --> 00:03:51,083
+Distribute, then add one, and we get y equals
+
+94
+00:03:51,083 --> 00:03:52,267
+two x minus one.
+
+95
+00:03:52,583 --> 00:03:55,233
+The secant connects two points and measures an average
+
+96
+00:03:55,233 --> 00:03:55,533
+rate.
+
+97
+00:03:55,850 --> 00:03:58,067
+The tangent is the limiting line at one point,
+
+98
+00:03:58,300 --> 00:04:00,967
+and its slope is the instantaneous rate of change.
+
+99
+00:04:01,283 --> 00:04:03,800
+That is the geometric meaning of the derivative: the
+
+100
+00:04:03,817 --> 00:04:05,550
+exact rate of change at one point.
+
+101
+00:04:15,100 --> 00:04:16,200
+We have returned to the car.
+
+102
+00:04:16,517 --> 00:04:18,967
+On a position time graph, the tangent slope at
+
+103
+00:04:18,983 --> 00:04:21,783
+an instant is the car's instantaneous velocity.
+
+104
+00:04:22,100 --> 00:04:25,233
+Keep three ideas: a secant connects two points and
+
+105
+00:04:25,250 --> 00:04:26,417
+gives average change.
+
+106
+00:04:26,733 --> 00:04:30,033
+The limit, h toward zero, shrinks their interval toward
+
+107
+00:04:30,050 --> 00:04:30,667
+an instant.
+
+108
+00:04:30,983 --> 00:04:33,150
+The derivative is the tangent's exact slope.
+
+109
+00:04:33,467 --> 00:04:35,833
+For our parabola, f prime of one is two,
+
+110
+00:04:36,067 --> 00:04:38,683
+and the tangent is y equals two x minus
+
+111
+00:04:38,700 --> 00:04:39,017
+one.
+
+112
+00:04:39,333 --> 00:04:40,317
+Thank you for watching.
+

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.remotion/
+out/
+*.tmp
+*.aiff
+__pycache__/
+.DS_Store

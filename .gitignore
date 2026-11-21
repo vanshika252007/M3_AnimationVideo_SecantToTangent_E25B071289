@@ -1,0 +1,5 @@
+.DS_Store
+_Code/node_modules/
+_Code/.remotion/
+_Code/out/
+_Code/public/audio/.tmp/

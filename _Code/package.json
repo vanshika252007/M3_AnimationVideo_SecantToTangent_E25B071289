@@ -1,0 +1,25 @@
+{
+  "name": "m3-secant-to-tangent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audio": "python3 scripts/build_audio.py",
+    "storyboard": "python3 scripts/build_storyboard.py",
+    "render": "remotion render src/index.ts Root ../SecantToTangent_Video.mp4 --codec=h264 --crf=28 --preset=fast --concurrency=4 --overwrite",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "@remotion/transitions": "4.0.545",
+    "remotion": "4.0.545",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.8.3"
+  }
+}

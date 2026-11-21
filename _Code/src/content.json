@@ -1,0 +1,95 @@
+{
+  "student": "Vanshika",
+  "studentFullName": "Vanshika Udhani",
+  "studentId": "E25B071289",
+  "course": "Linear Algebra and Calculus — M3",
+  "title": "How Does a Secant Line Become a Tangent Line?",
+  "musicCredit": "Original ambient music composed for this video",
+  "fps": 60,
+  "scenes": [
+    {
+      "id": "opening",
+      "title": "How Does a Secant Line Become a Tangent Line?",
+      "start": 0,
+      "duration": 480,
+      "narration": [
+        "How does a secant line become a tangent? Let us zoom in, and watch the limit take shape."
+      ]
+    },
+    {
+      "id": "hook",
+      "title": "One instant. One exact speed.",
+      "start": 480,
+      "duration": 1920,
+      "narration": [
+        "Picture a car moving down a road. Over a whole trip, average speed is straightforward: distance divided by time.",
+        "But a speedometer answers a different question. How fast is the car moving right now, at this exact instant?",
+        "To find out, zoom in on its position as time passes. A secant compares two nearby positions, and its slope gives the average rate of change.",
+        "Shrink the time interval toward zero, and that secant slope approaches the instantaneous rate, the derivative. Now let us see the same idea right on a curve."
+      ]
+    },
+    {
+      "id": "parabola",
+      "title": "Two points define a secant",
+      "start": 2400,
+      "duration": 2400,
+      "narration": [
+        "Start with f of x equals x squared, a familiar parabola. Fix A at the point one, one. The first coordinate is x; the second is the function value.",
+        "Now place B at three, nine. Both points lie on the curve. A straight line through two points of a curve is a secant.",
+        "Its slope is rise over run: change in output divided by change in input. From A to B, the rise is nine minus one, or eight. The run is three minus one, or two. Eight divided by two gives slope four.",
+        "This is average change across the interval. Next, B will move closer to A."
+      ]
+    },
+    {
+      "id": "approach",
+      "title": "Move B. Watch the slope.",
+      "start": 4800,
+      "duration": 4200,
+      "narration": [
+        "Name the horizontal gap h. Then B has x coordinate one plus h, and height the quantity one plus h, squared. The vertical rise is f of one plus h, minus f of one.",
+        "At first, h equals two, so the slope is four. Now watch purple B slide along the blue curve toward A. The pink secant pivots about yellow A, while the horizontal bracket shrinks.",
+        "At h equals one, the slope is three. At h equals one half, it is two point five. At one tenth, two point one. At one hundredth, two point zero one.",
+        "See the pattern? Every value approaches two. The vertical rise shrinks too, but the ratio of rise to run settles toward a steady value.",
+        "For every nonzero h, A and B are still distinct, and the secant has an ordinary slope. We never set h to zero in that fraction.",
+        "Instead, we ask what the slopes approach as B gets as close to A as we like. Their limit is two. The slopes do not need to equal two yet; only their limiting value is two."
+      ]
+    },
+    {
+      "id": "algebra",
+      "title": "The limit, step by step",
+      "start": 9000,
+      "duration": 3600,
+      "narration": [
+        "Here is the algebra that explains the motion. The secant slope m is f of one plus h, minus f of one, all divided by h.",
+        "Substituting f of x equals x squared gives the quantity one plus h, squared, minus one, over h. Expand the square: one plus two h plus h squared, minus one, over h.",
+        "The positive one and the negative one cancel. That leaves two h plus h squared, all over h. Factor h from the numerator to get h times two plus h, over h.",
+        "Since h is not zero, cancel the common h. Now m equals two plus h. This cancellation is valid for nonzero h only.",
+        "The original fraction at h equals zero would be zero divided by zero. Simplify first; then take the limit.",
+        "As h approaches zero, two plus h approaches two. Therefore the derivative f prime of one is two. Geometrically, two is the secant slopes' limiting value."
+      ]
+    },
+    {
+      "id": "tangent",
+      "title": "One point. The tangent.",
+      "start": 12600,
+      "duration": 2700,
+      "narration": [
+        "Now watch B approach A. The pink secant pivots smoothly into a green tangent, the line with the curve's direction at A.",
+        "Its slope is two. On the slope triangle, one unit right is a run of one; two units up is a rise of two.",
+        "Use point slope form: y minus one equals two times x minus one. Distribute, then add one, and we get y equals two x minus one.",
+        "The secant connects two points and measures an average rate. The tangent is the limiting line at one point, and its slope is the instantaneous rate of change. That is the geometric meaning of the derivative: the exact rate of change at one point."
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "A shrinking interval reveals the derivative",
+      "start": 15300,
+      "duration": 3000,
+      "narration": [
+        "We have returned to the car. On a position time graph, the tangent slope at an instant is the car's instantaneous velocity.",
+        "Keep three ideas: a secant connects two points and gives average change. The limit, h toward zero, shrinks their interval toward an instant. The derivative is the tangent's exact slope.",
+        "For our parabola, f prime of one is two, and the tangent is y equals two x minus one. Thank you for watching."
+      ]
+    }
+  ]
+}

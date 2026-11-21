@@ -1,0 +1,674 @@
+[
+  {
+    "start": 6,
+    "end": 113,
+    "text": "How does a secant line become a tangent?",
+    "scene": 0
+  },
+  {
+    "start": 132,
+    "end": 246,
+    "text": "Let us zoom in, and watch the limit take",
+    "scene": 0
+  },
+  {
+    "start": 246,
+    "end": 269,
+    "text": "shape.",
+    "scene": 0
+  },
+  {
+    "start": 486,
+    "end": 583,
+    "text": "Picture a car moving down a road.",
+    "scene": 1
+  },
+  {
+    "start": 602,
+    "end": 806,
+    "text": "Over a whole trip, average speed is straightforward: distance",
+    "scene": 1
+  },
+  {
+    "start": 807,
+    "end": 866,
+    "text": "divided by time.",
+    "scene": 1
+  },
+  {
+    "start": 885,
+    "end": 1018,
+    "text": "But a speedometer answers a different question.",
+    "scene": 1
+  },
+  {
+    "start": 1037,
+    "end": 1154,
+    "text": "How fast is the car moving right now, at",
+    "scene": 1
+  },
+  {
+    "start": 1155,
+    "end": 1211,
+    "text": "this exact instant?",
+    "scene": 1
+  },
+  {
+    "start": 1230,
+    "end": 1359,
+    "text": "To find out, zoom in on its position as",
+    "scene": 1
+  },
+  {
+    "start": 1359,
+    "end": 1408,
+    "text": "time passes.",
+    "scene": 1
+  },
+  {
+    "start": 1427,
+    "end": 1608,
+    "text": "A secant compares two nearby positions, and its slope",
+    "scene": 1
+  },
+  {
+    "start": 1610,
+    "end": 1703,
+    "text": "gives the average rate of change.",
+    "scene": 1
+  },
+  {
+    "start": 1722,
+    "end": 1892,
+    "text": "Shrink the time interval toward zero, and that secant",
+    "scene": 1
+  },
+  {
+    "start": 1893,
+    "end": 2073,
+    "text": "slope approaches the instantaneous rate, the derivative.",
+    "scene": 1
+  },
+  {
+    "start": 2092,
+    "end": 2197,
+    "text": "Now let us see the same idea right on",
+    "scene": 1
+  },
+  {
+    "start": 2198,
+    "end": 2226,
+    "text": "a curve.",
+    "scene": 1
+  },
+  {
+    "start": 2406,
+    "end": 2573,
+    "text": "Start with f of x equals x squared, a",
+    "scene": 2
+  },
+  {
+    "start": 2574,
+    "end": 2640,
+    "text": "familiar parabola.",
+    "scene": 2
+  },
+  {
+    "start": 2658,
+    "end": 2744,
+    "text": "Fix A at the point one, one.",
+    "scene": 2
+  },
+  {
+    "start": 2764,
+    "end": 2929,
+    "text": "The first coordinate is x; the second is the",
+    "scene": 2
+  },
+  {
+    "start": 2930,
+    "end": 2983,
+    "text": "function value.",
+    "scene": 2
+  },
+  {
+    "start": 3002,
+    "end": 3089,
+    "text": "Now place B at three, nine.",
+    "scene": 2
+  },
+  {
+    "start": 3108,
+    "end": 3189,
+    "text": "Both points lie on the curve.",
+    "scene": 2
+  },
+  {
+    "start": 3208,
+    "end": 3323,
+    "text": "A straight line through two points of a curve",
+    "scene": 2
+  },
+  {
+    "start": 3324,
+    "end": 3365,
+    "text": "is a secant.",
+    "scene": 2
+  },
+  {
+    "start": 3385,
+    "end": 3539,
+    "text": "Its slope is rise over run: change in output",
+    "scene": 2
+  },
+  {
+    "start": 3539,
+    "end": 3620,
+    "text": "divided by change in input.",
+    "scene": 2
+  },
+  {
+    "start": 3639,
+    "end": 3794,
+    "text": "From A to B, the rise is nine minus",
+    "scene": 2
+  },
+  {
+    "start": 3794,
+    "end": 3849,
+    "text": "one, or eight.",
+    "scene": 2
+  },
+  {
+    "start": 3868,
+    "end": 3987,
+    "text": "The run is three minus one, or two.",
+    "scene": 2
+  },
+  {
+    "start": 4006,
+    "end": 4127,
+    "text": "Eight divided by two gives slope four.",
+    "scene": 2
+  },
+  {
+    "start": 4146,
+    "end": 4269,
+    "text": "This is average change across the interval.",
+    "scene": 2
+  },
+  {
+    "start": 4289,
+    "end": 4392,
+    "text": "Next, B will move closer to A.",
+    "scene": 2
+  },
+  {
+    "start": 4806,
+    "end": 4909,
+    "text": "Name the horizontal gap h.",
+    "scene": 3
+  },
+  {
+    "start": 4927,
+    "end": 5082,
+    "text": "Then B has x coordinate one plus h, and",
+    "scene": 3
+  },
+  {
+    "start": 5083,
+    "end": 5216,
+    "text": "height the quantity one plus h, squared.",
+    "scene": 3
+  },
+  {
+    "start": 5235,
+    "end": 5392,
+    "text": "The vertical rise is f of one plus h,",
+    "scene": 3
+  },
+  {
+    "start": 5412,
+    "end": 5477,
+    "text": "minus f of one.",
+    "scene": 3
+  },
+  {
+    "start": 5496,
+    "end": 5679,
+    "text": "At first, h equals two, so the slope is",
+    "scene": 3
+  },
+  {
+    "start": 5679,
+    "end": 5702,
+    "text": "four.",
+    "scene": 3
+  },
+  {
+    "start": 5721,
+    "end": 5861,
+    "text": "Now watch purple B slide along the blue curve",
+    "scene": 3
+  },
+  {
+    "start": 5862,
+    "end": 5889,
+    "text": "toward A.",
+    "scene": 3
+  },
+  {
+    "start": 5908,
+    "end": 6056,
+    "text": "The pink secant pivots about yellow A, while the",
+    "scene": 3
+  },
+  {
+    "start": 6056,
+    "end": 6142,
+    "text": "horizontal bracket shrinks.",
+    "scene": 3
+  },
+  {
+    "start": 6162,
+    "end": 6318,
+    "text": "At h equals one, the slope is three.",
+    "scene": 3
+  },
+  {
+    "start": 6337,
+    "end": 6466,
+    "text": "At h equals one half, it is two point",
+    "scene": 3
+  },
+  {
+    "start": 6467,
+    "end": 6493,
+    "text": "five.",
+    "scene": 3
+  },
+  {
+    "start": 6512,
+    "end": 6607,
+    "text": "At one tenth, two point one.",
+    "scene": 3
+  },
+  {
+    "start": 6626,
+    "end": 6755,
+    "text": "At one hundredth, two point zero one.",
+    "scene": 3
+  },
+  {
+    "start": 6774,
+    "end": 6815,
+    "text": "See the pattern?",
+    "scene": 3
+  },
+  {
+    "start": 6835,
+    "end": 6925,
+    "text": "Every value approaches two.",
+    "scene": 3
+  },
+  {
+    "start": 6944,
+    "end": 7098,
+    "text": "The vertical rise shrinks too, but the ratio of",
+    "scene": 3
+  },
+  {
+    "start": 7098,
+    "end": 7227,
+    "text": "rise to run settles toward a steady value.",
+    "scene": 3
+  },
+  {
+    "start": 7246,
+    "end": 7408,
+    "text": "For every nonzero h, A and B are still",
+    "scene": 3
+  },
+  {
+    "start": 7409,
+    "end": 7563,
+    "text": "distinct, and the secant has an ordinary slope.",
+    "scene": 3
+  },
+  {
+    "start": 7582,
+    "end": 7705,
+    "text": "We never set h to zero in that fraction.",
+    "scene": 3
+  },
+  {
+    "start": 7724,
+    "end": 7867,
+    "text": "Instead, we ask what the slopes approach as B",
+    "scene": 3
+  },
+  {
+    "start": 7867,
+    "end": 7958,
+    "text": "gets as close to A as we like.",
+    "scene": 3
+  },
+  {
+    "start": 7977,
+    "end": 8038,
+    "text": "Their limit is two.",
+    "scene": 3
+  },
+  {
+    "start": 8057,
+    "end": 8162,
+    "text": "The slopes do not need to equal two yet;",
+    "scene": 3
+  },
+  {
+    "start": 8187,
+    "end": 8290,
+    "text": "only their limiting value is two.",
+    "scene": 3
+  },
+  {
+    "start": 9006,
+    "end": 9141,
+    "text": "Here is the algebra that explains the motion.",
+    "scene": 4
+  },
+  {
+    "start": 9160,
+    "end": 9289,
+    "text": "The secant slope m is f of one plus",
+    "scene": 4
+  },
+  {
+    "start": 9294,
+    "end": 9478,
+    "text": "h, minus f of one, all divided by h.",
+    "scene": 4
+  },
+  {
+    "start": 9496,
+    "end": 9661,
+    "text": "Substituting f of x equals x squared gives the",
+    "scene": 4
+  },
+  {
+    "start": 9662,
+    "end": 9901,
+    "text": "quantity one plus h, squared, minus one, over h.",
+    "scene": 4
+  },
+  {
+    "start": 9914,
+    "end": 10086,
+    "text": "Expand the square: one plus two h plus h",
+    "scene": 4
+  },
+  {
+    "start": 10087,
+    "end": 10221,
+    "text": "squared, minus one, over h.",
+    "scene": 4
+  },
+  {
+    "start": 10240,
+    "end": 10366,
+    "text": "The positive one and the negative one cancel.",
+    "scene": 4
+  },
+  {
+    "start": 10385,
+    "end": 10547,
+    "text": "That leaves two h plus h squared, all over",
+    "scene": 4
+  },
+  {
+    "start": 10548,
+    "end": 10567,
+    "text": "h.",
+    "scene": 4
+  },
+  {
+    "start": 10582,
+    "end": 10723,
+    "text": "Factor h from the numerator to get h times",
+    "scene": 4
+  },
+  {
+    "start": 10724,
+    "end": 10825,
+    "text": "two plus h, over h.",
+    "scene": 4
+  },
+  {
+    "start": 10844,
+    "end": 11003,
+    "text": "Since h is not zero, cancel the common h.",
+    "scene": 4
+  },
+  {
+    "start": 11022,
+    "end": 11136,
+    "text": "Now m equals two plus h.",
+    "scene": 4
+  },
+  {
+    "start": 11155,
+    "end": 11331,
+    "text": "This cancellation is valid for nonzero h only.",
+    "scene": 4
+  },
+  {
+    "start": 11350,
+    "end": 11506,
+    "text": "The original fraction at h equals zero would be",
+    "scene": 4
+  },
+  {
+    "start": 11506,
+    "end": 11587,
+    "text": "zero divided by zero.",
+    "scene": 4
+  },
+  {
+    "start": 11606,
+    "end": 11739,
+    "text": "Simplify first; then take the limit.",
+    "scene": 4
+  },
+  {
+    "start": 11758,
+    "end": 11938,
+    "text": "As h approaches zero, two plus h approaches two.",
+    "scene": 4
+  },
+  {
+    "start": 11957,
+    "end": 12092,
+    "text": "Therefore the derivative f prime of one is two.",
+    "scene": 4
+  },
+  {
+    "start": 12112,
+    "end": 12310,
+    "text": "Geometrically, two is the secant slopes' limiting value.",
+    "scene": 4
+  },
+  {
+    "start": 12606,
+    "end": 12687,
+    "text": "Now watch B approach A.",
+    "scene": 5
+  },
+  {
+    "start": 12706,
+    "end": 12866,
+    "text": "The pink secant pivots smoothly into a green tangent,",
+    "scene": 5
+  },
+  {
+    "start": 12885,
+    "end": 12989,
+    "text": "the line with the curve's direction at A.",
+    "scene": 5
+  },
+  {
+    "start": 13008,
+    "end": 13062,
+    "text": "Its slope is two.",
+    "scene": 5
+  },
+  {
+    "start": 13081,
+    "end": 13221,
+    "text": "On the slope triangle, one unit right is a",
+    "scene": 5
+  },
+  {
+    "start": 13221,
+    "end": 13358,
+    "text": "run of one; two units up is a rise",
+    "scene": 5
+  },
+  {
+    "start": 13358,
+    "end": 13389,
+    "text": "of two.",
+    "scene": 5
+  },
+  {
+    "start": 13408,
+    "end": 13589,
+    "text": "Use point slope form: y minus one equals two",
+    "scene": 5
+  },
+  {
+    "start": 13589,
+    "end": 13671,
+    "text": "times x minus one.",
+    "scene": 5
+  },
+  {
+    "start": 13690,
+    "end": 13865,
+    "text": "Distribute, then add one, and we get y equals",
+    "scene": 5
+  },
+  {
+    "start": 13865,
+    "end": 13936,
+    "text": "two x minus one.",
+    "scene": 5
+  },
+  {
+    "start": 13955,
+    "end": 14114,
+    "text": "The secant connects two points and measures an average",
+    "scene": 5
+  },
+  {
+    "start": 14114,
+    "end": 14132,
+    "text": "rate.",
+    "scene": 5
+  },
+  {
+    "start": 14151,
+    "end": 14284,
+    "text": "The tangent is the limiting line at one point,",
+    "scene": 5
+  },
+  {
+    "start": 14298,
+    "end": 14458,
+    "text": "and its slope is the instantaneous rate of change.",
+    "scene": 5
+  },
+  {
+    "start": 14477,
+    "end": 14628,
+    "text": "That is the geometric meaning of the derivative: the",
+    "scene": 5
+  },
+  {
+    "start": 14629,
+    "end": 14733,
+    "text": "exact rate of change at one point.",
+    "scene": 5
+  },
+  {
+    "start": 15306,
+    "end": 15372,
+    "text": "We have returned to the car.",
+    "scene": 6
+  },
+  {
+    "start": 15391,
+    "end": 15538,
+    "text": "On a position time graph, the tangent slope at",
+    "scene": 6
+  },
+  {
+    "start": 15539,
+    "end": 15707,
+    "text": "an instant is the car's instantaneous velocity.",
+    "scene": 6
+  },
+  {
+    "start": 15726,
+    "end": 15914,
+    "text": "Keep three ideas: a secant connects two points and",
+    "scene": 6
+  },
+  {
+    "start": 15915,
+    "end": 15985,
+    "text": "gives average change.",
+    "scene": 6
+  },
+  {
+    "start": 16004,
+    "end": 16202,
+    "text": "The limit, h toward zero, shrinks their interval toward",
+    "scene": 6
+  },
+  {
+    "start": 16203,
+    "end": 16240,
+    "text": "an instant.",
+    "scene": 6
+  },
+  {
+    "start": 16259,
+    "end": 16389,
+    "text": "The derivative is the tangent's exact slope.",
+    "scene": 6
+  },
+  {
+    "start": 16408,
+    "end": 16550,
+    "text": "For our parabola, f prime of one is two,",
+    "scene": 6
+  },
+  {
+    "start": 16564,
+    "end": 16721,
+    "text": "and the tangent is y equals two x minus",
+    "scene": 6
+  },
+  {
+    "start": 16722,
+    "end": 16741,
+    "text": "one.",
+    "scene": 6
+  },
+  {
+    "start": 16760,
+    "end": 16819,
+    "text": "Thank you for watching.",
+    "scene": 6
+  }
+]
