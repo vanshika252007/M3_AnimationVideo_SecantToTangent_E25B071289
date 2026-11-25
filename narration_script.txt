@@ -1,7 +1,7 @@
 HOW DOES A SECANT LINE BECOME A TANGENT LINE?
 Linear Algebra and Calculus — M3 | Vanshika | E25B071289
 Voice: en-US-AvaNeural at +14%; English captions use Edge TTS word-boundary timing.
-Planned runtime: 05:05 at 60 fps.
+Planned runtime: 05:30 at 60 fps.
 
 
 SCENE 1: How Does a Secant Line Become a Tangent Line? (00:00:00,000 - 00:00:08,000)
@@ -41,7 +41,8 @@ Its slope is two. On the slope triangle, one unit right is a run of one; two uni
 Use point slope form: y minus one equals two times x minus one. Distribute, then add one, and we get y equals two x minus one.
 The secant connects two points and measures an average rate. The tangent is the limiting line at one point, and its slope is the instantaneous rate of change. That is the geometric meaning of the derivative: the exact rate of change at one point.
 
-SCENE 7: A shrinking interval reveals the derivative (00:04:15,000 - 00:05:05,000)
-We have returned to the car. On a position time graph, the tangent slope at an instant is the car's instantaneous velocity.
-Keep three ideas: a secant connects two points and gives average change. The limit, h toward zero, shrinks their interval toward an instant. The derivative is the tangent's exact slope.
-For our parabola, f prime of one is two, and the tangent is y equals two x minus one. Thank you for watching.
+SCENE 7: Visual Summary & Key Takeaways (00:04:15,000 - 00:04:45,000)
+Before we wrap up, let's quickly recap what we discovered. First, a secant line connects two points on a curve, giving the average rate of change. Second, as the horizontal distance h shrinks toward zero, that secant line pivots into a single tangent line. Finally, the limiting slope is the derivative—giving us f prime of one equals two, and the tangent line y equals two x minus one.
+
+SCENE 8: Thank You · Project made by Vanshika Udhani (00:04:45,000 - 00:05:30,000)
+Thank you for watching.

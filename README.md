@@ -14,7 +14,7 @@ accessible playback and editing.
 
 ## Deliverables
 
-- `SecantToTangent_Video.mp4` — final 1920 × 1080, 60 fps H.264 video (5:05)
+- `SecantToTangent_Video.mp4` — final 1920 × 1080, 60 fps H.264 video (5:30)
 - `SecantToTangent_Subtitles.srt` — timed English captions
 - `storyboard.pdf` — six-part visual and narration storyboard
 - `narration_script.txt` — complete timestamped narration
@@ -46,8 +46,8 @@ samples.
 
 The renderer writes `SecantToTangent_Video.mp4` in the repository root. Rendering
 at 60 fps takes time; the project is configured for H.264 with CRF 28 to keep
-the final video practical to store and push. The target runtime is 5:05,
-including the additional 15-second author outro.
+the final video practical to store and push. A 30-second visual summary leads
+into a separate animated thank-you and author outro for a 5:30 target runtime.
 
 ## Mathematics
 

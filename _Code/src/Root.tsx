@@ -1,5 +1,6 @@
 import {Audio, Composition, Sequence, staticFile} from 'remotion';
 import {Video} from './Video';
+import {Disclosure} from './Disclosure';
 import content from './content.json';
 
 const durationInFrames = content.scenes.reduce(
@@ -13,6 +14,14 @@ export const Root = () => (
       id="Root"
       component={Video}
       durationInFrames={durationInFrames}
+      fps={content.fps}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="Disclosure"
+      component={Disclosure}
+      durationInFrames={360}
       fps={content.fps}
       width={1920}
       height={1080}

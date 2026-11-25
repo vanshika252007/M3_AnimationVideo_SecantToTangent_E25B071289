@@ -96,7 +96,7 @@ const HUD = ({frame, sceneIndex}: {frame: number; sceneIndex: number}) => {
       <rect x="64" y="46" width="56" height="6" rx="3" fill={C.blue} />
       <Text x={135} y={57} size={20} color={C.muted} weight={700}>M3 CALCULUS  /  RATE OF CHANGE</Text>
       <Text x={1854} y={57} size={19} color={C.muted} anchor="end">
-        {String(sceneIndex + 1).padStart(2, '0')}  /  07
+        {String(sceneIndex + 1).padStart(2, '0')}  /  {String(content.scenes.length).padStart(2, '0')}
       </Text>
       <rect x="64" y="1051" width="1792" height="3" rx="1.5" fill="#334155" />
       <rect x="64" y="1051" width={1792 * progress} height="3" rx="1.5" fill={C.blue} opacity=".82" />
@@ -515,91 +515,119 @@ const Tangent = ({frame}: {frame: number}) => {
 const TakeawayCard = ({
   x,
   y,
+  width,
   number,
   title,
   detail,
+  formula,
   color,
   progress,
 }: {
   x: number;
   y: number;
+  width: number;
   number: string;
   title: string;
   detail: string;
+  formula: string;
   color: string;
   progress: number;
 }) => (
   <g opacity={progress} transform={`translate(0 ${(1 - progress) * 36})`}>
-    <rect x={x} y={y} width="520" height="230" rx="25" fill="#15243A" stroke={color} strokeOpacity=".58" strokeWidth="2" />
+    <rect x={x} y={y} width={width} height="185" rx="22" fill="#15243A" stroke={color} strokeOpacity=".58" strokeWidth="2" />
     <circle cx={x + 53} cy={y + 53} r="25" fill={color} opacity=".17" />
     <Text x={x + 53} y={y + 61} size={22} color={color} anchor="middle" weight={700}>{number}</Text>
-    <Text x={x + 96} y={y + 62} size={30} color={color} weight={700}>{title}</Text>
-    <Text x={x + 34} y={y + 124} size={22}>{detail}</Text>
-    <rect x={x + 34} y={y + 168} width={432 * progress} height="4" rx="2" fill={color} opacity=".68" />
+    <Text x={x + 96} y={y + 61} size={28} color={color} weight={700}>{title}</Text>
+    <Text x={x + 34} y={y + 111} size={21}>{detail}</Text>
+    <Text x={x + 34} y={y + 153} size={23} color={C.white} weight={700}>{formula}</Text>
+    <rect x={x + 34} y={y + 174} width={(width - 68) * progress} height="3" rx="1.5" fill={color} opacity=".68" />
   </g>
 );
 
 const Summary = ({frame}: {frame: number}) => {
-  const carProgress = interpolate(frame, [0, 650], [0, 1], {...clamp, easing: ease});
-  const cardProgress = (index: number) =>
-    interpolate(frame, [sec(1 + index), sec(2 + index)], [0, 1], {...clamp, easing: ease});
-  const carX = interpolate(carProgress, [0, 1], [1260, 1500]);
-  const carY = 350 - carProgress * 120;
-  const takeawayOpacity = interpolate(frame, [sec(19), sec(22)], [1, 0], clamp);
-  const closingProgress = interpolate(frame, [sec(20), sec(23)], [0, 1], {...clamp, easing: ease});
-  const authorCardProgress = interpolate(frame, [sec(35), sec(36.5)], [0, 1], {...clamp, easing: ease});
-  const orbit = frame / 45;
+  const h = interpolate(frame, [0, sec(7), sec(10)], [1.5, 0.001, 0.001], {...clamp, easing: ease});
+  const tangentProgress = interpolate(frame, [sec(6), sec(10)], [0, 1], {...clamp, easing: ease});
+  const cardProgress = (start: number) =>
+    interpolate(frame, [sec(start), sec(start + 0.8)], [0, 1], {...clamp, easing: ease});
   return (
     <>
-      <g opacity={takeawayOpacity}>
-        <Heading y={142} size={46}>From a shrinking interval to a derivative</Heading>
-        <Text x={960} y={191} size={22} color={C.muted} anchor="middle">THREE IDEAS TO TAKE WITH YOU</Text>
-        <path d="M460 366 Q770 390 1020 318 T1480 230" fill="none" stroke={C.blue} strokeWidth="4" strokeDasharray="12 10" />
-        <circle cx={1280 + carProgress * 190} cy={350 - carProgress * 115} r="8" fill={C.yellow} />
-        <Car x={carX} y={carY} scale={0.54} />
-        <rect x="420" y="250" width="380" height="110" rx="20" fill="#15243A" stroke="#34445A" />
-        <Text x={610} y={291} size={18} color={C.muted} anchor="middle">POSITION–TIME GRAPH</Text>
-        <Text x={610} y={334} size={25} color={C.green} anchor="middle">tangent slope = velocity</Text>
-        <TakeawayCard x={75} y={460} number="01" title="SECANT" detail="Two points · average change" color={C.pink} progress={cardProgress(0)} />
-        <TakeawayCard x={700} y={460} number="02" title="LIMIT" detail="h → 0 · shrink to an instant" color={C.purple} progress={cardProgress(1)} />
-        <TakeawayCard x={1325} y={460} number="03" title="DERIVATIVE" detail="Tangent slope · exact rate" color={C.green} progress={cardProgress(2)} />
-        <g opacity={interpolate(frame, [sec(10), sec(12)], [0, 1], clamp)}>
-          <rect x="280" y="760" width="1360" height="130" rx="28" fill="#132C35" stroke={C.green} strokeOpacity=".56" />
-          <Text x={960} y={814} size={31} color={C.muted} anchor="middle" weight={700}>A derivative is the slope of the tangent line.</Text>
-          <Text x={960} y={858} size={34} color={C.green} anchor="middle" weight={700}>f(x) = x²   ·   f′(1) = 2   ·   y = 2x − 1</Text>
-        </g>
-      </g>
-      <g opacity={closingProgress * (1 - authorCardProgress)}>
-        <rect width="1920" height="1080" fill={C.bg} />
-        <circle cx="1530" cy="500" r="290" fill="none" stroke={C.blue} strokeWidth="2" opacity=".09" />
-        <circle cx="1530" cy="500" r="218" fill="none" stroke={C.blue} strokeWidth="2" strokeDasharray="8 14" opacity=".18" />
-        <path d="M1320 795 Q1430 745 1510 585 T1780 300" fill="none" stroke={C.blue} strokeWidth="5" opacity=".38" />
-        <path d="M1425 765 L1740 415" fill="none" stroke={C.green} strokeWidth="5" opacity=".64" />
-        <circle cx={1530 + 218 * Math.cos(orbit)} cy={500 + 218 * Math.sin(orbit)} r="9" fill={C.yellow} />
-        <circle cx="1530" cy="500" r="10" fill={C.yellow} />
-        <Text x={960} y={340} size={55} color={C.blue} anchor="middle" weight={700}>A Derivative is the Slope</Text>
-        <Text x={960} y={414} size={55} anchor="middle" weight={700}>of the Tangent Line</Text>
-        <rect x="625" y="480" width="670" height="2" fill={C.blue} opacity=".58" />
-        <Text x={960} y={567} size={34} anchor="middle" weight={700}>{content.student}  ·  {content.studentId}</Text>
-        <Text x={960} y={620} size={27} color={C.muted} anchor="middle">{content.course}</Text>
-        <Text x={960} y={753} size={20} color={C.muted} anchor="middle">{content.musicCredit}</Text>
-      </g>
-      <g opacity={authorCardProgress}>
-        <rect width="1920" height="1080" fill={C.bg} />
-        <circle cx="1530" cy="500" r="290" fill="none" stroke={C.blue} strokeWidth="2" opacity=".09" />
-        <circle cx="1530" cy="500" r="218" fill="none" stroke={C.blue} strokeWidth="2" strokeDasharray="8 14" opacity=".18" />
-        <path d="M1320 795 Q1430 745 1510 585 T1780 300" fill="none" stroke={C.blue} strokeWidth="5" opacity=".38" />
-        <path d="M1425 765 L1740 415" fill="none" stroke={C.green} strokeWidth="5" opacity=".64" />
-        <circle cx={1530 + 218 * Math.cos(orbit)} cy={500 + 218 * Math.sin(orbit)} r="9" fill={C.yellow} />
-        <circle cx="1530" cy="500" r="10" fill={C.yellow} />
-        <Text x={960} y={465} size={42} color={C.muted} anchor="middle" weight={600}>Project made by</Text>
-        <Text x={960} y={550} size={64} color={C.blue} anchor="middle" weight={700}>{content.studentFullName}</Text>
-        <rect x="625" y="590" width="670" height="2" fill={C.blue} opacity=".58" />
-        <Text x={960} y={644} size={29} anchor="middle" weight={700}>{content.student}  ·  {content.studentId}</Text>
-        <Text x={960} y={691} size={24} color={C.muted} anchor="middle">{content.course}</Text>
-        <Text x={960} y={753} size={20} color={C.muted} anchor="middle">{content.musicCredit}</Text>
-      </g>
+      <Heading y={139} size={45}>Visual Summary &amp; Key Takeaways</Heading>
+      <Text x={960} y={187} size={21} color={C.muted} anchor="middle">ONE CURVE · ONE SHRINKING INTERVAL · ONE EXACT SLOPE</Text>
+      <Text x={310} y={236} size={19} color={C.blue} anchor="middle" weight={700}>ANIMATED RECAP</Text>
+      <Chart
+        x={310}
+        y={755}
+        sx={145}
+        sy={48}
+        width={850}
+        height={520}
+        h={h}
+        showGuides
+        showBrackets
+        tangentProgress={tangentProgress}
+        small
+        yTicks={[0, 1, 4, 9]}
+      />
+      <rect x="150" y="265" width="260" height="84" rx="18" fill="#132C35" stroke={C.green} strokeOpacity=".7" />
+      <Text x={280} y={297} size={16} color={C.muted} anchor="middle" weight={700}>TANGENT SLOPE</Text>
+      <Text x={280} y={333} size={27} color={C.green} anchor="middle" weight={700}>m = 2</Text>
+      <TakeawayCard
+        x={1010}
+        y={230}
+        width={820}
+        number="01"
+        title="Secant Line = Average Rate"
+        detail="Connect A(1, 1) and B(1 + h, (1 + h)²)"
+        formula="m = 2 + h"
+        color={C.pink}
+        progress={cardProgress(3)}
+      />
+      <TakeawayCard
+        x={1010}
+        y={435}
+        width={820}
+        number="02"
+        title="Limit Shrinks the Interval (h → 0)"
+        detail="As B approaches A, the secant pivots into the tangent."
+        formula="B → A   ·   secant → tangent"
+        color={C.yellow}
+        progress={cardProgress(8.5)}
+      />
+      <TakeawayCard
+        x={1010}
+        y={640}
+        width={820}
+        number="03"
+        title="Derivative = Tangent Slope"
+        detail="The limiting slope is the derivative at A."
+        formula="limₕ→₀ (2 + h) = f′(1) = 2  ·  y = 2x − 1"
+        color={C.green}
+        progress={cardProgress(15.2)}
+      />
     </>
+  );
+};
+
+const Outro = ({frame}: {frame: number}) => {
+  const reveal = interpolate(frame, [0, sec(2.5)], [0, 1], {...clamp, easing: ease});
+  const orbit = frame / 48;
+  return (
+    <g opacity={reveal}>
+      <circle cx="1530" cy="490" r={286 + 5 * Math.sin(frame / 30)} fill="none" stroke={C.blue} strokeWidth="2" opacity=".09" />
+      <circle cx="1530" cy="490" r="214" fill="none" stroke={C.blue} strokeWidth="2" strokeDasharray="8 14" opacity=".18" />
+      <path d="M1320 785 Q1430 735 1510 575 T1780 290" fill="none" stroke={C.blue} strokeWidth="5" opacity=".38" />
+      <path d="M1425 755 L1740 405" fill="none" stroke={C.green} strokeWidth="5" opacity=".64" />
+      <circle cx={1530 + 214 * Math.cos(orbit)} cy={490 + 214 * Math.sin(orbit)} r="9" fill={C.yellow} />
+      <circle cx="1530" cy="490" r="10" fill={C.yellow} />
+      <Text x={960} y={338} size={67} color={C.blue} anchor="middle" weight={700}>Thank You</Text>
+      <Text x={960} y={432} size={37} color={C.muted} anchor="middle" weight={600}>Project made by</Text>
+      <Text x={960} y={516} size={61} color={C.white} anchor="middle" weight={700}>{content.studentFullName}</Text>
+      <rect x="625" y="559" width="670" height="2" fill={C.blue} opacity=".58" />
+      <Text x={960} y={612} size={29} anchor="middle" weight={700}>{content.student}  ·  {content.studentId}</Text>
+      <Text x={960} y={660} size={24} color={C.muted} anchor="middle">{content.course}</Text>
+      <Text x={960} y={731} size={22} color={C.green} anchor="middle" weight={700}>f′(1) = 2  ·  y = 2x − 1</Text>
+      <Text x={960} y={785} size={19} color={C.muted} anchor="middle">{content.musicCredit}</Text>
+    </g>
   );
 };
 
@@ -634,7 +662,7 @@ const Captions = ({frame}: {frame: number}) => {
   );
 };
 
-const scenes = [Opening, Hook, Parabola, Approach, Algebra, Tangent, Summary] as const;
+const scenes = [Opening, Hook, Parabola, Approach, Algebra, Tangent, Summary, Outro] as const;
 
 export const Video = () => {
   const frame = useCurrentFrame();
@@ -670,7 +698,7 @@ export const Video = () => {
           <Scene frame={localFrame} />
         </svg>
       </div>
-      {!(sceneIndex === 6 && localFrame >= sec(20)) && (
+      {sceneIndex !== 7 && (
         <div style={{position: 'absolute', inset: 0, zIndex: 2}}>
           <HUD frame={frame} sceneIndex={sceneIndex} />
         </div>

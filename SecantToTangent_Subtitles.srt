@@ -399,50 +399,42 @@ That is the geometric meaning of the derivative: the
 exact rate of change at one point.
 
 101
-00:04:15,100 --> 00:04:16,200
-We have returned to the car.
+00:04:15,100 --> 00:04:17,550
+Before we wrap up, let's quickly recap what we
 
 102
-00:04:16,517 --> 00:04:18,967
-On a position time graph, the tangent slope at
+00:04:17,567 --> 00:04:18,117
+discovered.
 
 103
-00:04:18,983 --> 00:04:21,783
-an instant is the car's instantaneous velocity.
+00:04:18,433 --> 00:04:20,933
+First, a secant line connects two points on a
 
 104
-00:04:22,100 --> 00:04:25,233
-Keep three ideas: a secant connects two points and
+00:04:20,950 --> 00:04:23,183
+curve, giving the average rate of change.
 
 105
-00:04:25,250 --> 00:04:26,417
-gives average change.
+00:04:23,500 --> 00:04:26,733
+Second, as the horizontal distance h shrinks toward zero,
 
 106
-00:04:26,733 --> 00:04:30,033
-The limit, h toward zero, shrinks their interval toward
+00:04:27,117 --> 00:04:29,867
+that secant line pivots into a single tangent line.
 
 107
-00:04:30,050 --> 00:04:30,667
-an instant.
+00:04:30,200 --> 00:04:33,483
+Finally, the limiting slope is the derivative—giving us f
 
 108
-00:04:30,983 --> 00:04:33,150
-The derivative is the tangent's exact slope.
+00:04:33,500 --> 00:04:36,183
+prime of one equals two, and the tangent line
 
 109
-00:04:33,467 --> 00:04:35,833
-For our parabola, f prime of one is two,
+00:04:36,200 --> 00:04:38,150
+y equals two x minus one.
 
 110
-00:04:36,067 --> 00:04:38,683
-and the tangent is y equals two x minus
-
-111
-00:04:38,700 --> 00:04:39,017
-one.
-
-112
-00:04:39,333 --> 00:04:40,317
+00:04:45,100 --> 00:04:46,083
 Thank you for watching.
 

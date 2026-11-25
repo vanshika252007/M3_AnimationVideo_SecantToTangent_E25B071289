@@ -601,74 +601,62 @@
   },
   {
     "start": 15306,
-    "end": 15372,
-    "text": "We have returned to the car.",
+    "end": 15453,
+    "text": "Before we wrap up, let's quickly recap what we",
     "scene": 6
   },
   {
-    "start": 15391,
-    "end": 15538,
-    "text": "On a position time graph, the tangent slope at",
+    "start": 15454,
+    "end": 15487,
+    "text": "discovered.",
     "scene": 6
   },
   {
-    "start": 15539,
-    "end": 15707,
-    "text": "an instant is the car's instantaneous velocity.",
+    "start": 15506,
+    "end": 15656,
+    "text": "First, a secant line connects two points on a",
     "scene": 6
   },
   {
-    "start": 15726,
-    "end": 15914,
-    "text": "Keep three ideas: a secant connects two points and",
+    "start": 15657,
+    "end": 15791,
+    "text": "curve, giving the average rate of change.",
     "scene": 6
   },
   {
-    "start": 15915,
-    "end": 15985,
-    "text": "gives average change.",
+    "start": 15810,
+    "end": 16004,
+    "text": "Second, as the horizontal distance h shrinks toward zero,",
     "scene": 6
   },
   {
-    "start": 16004,
-    "end": 16202,
-    "text": "The limit, h toward zero, shrinks their interval toward",
+    "start": 16027,
+    "end": 16192,
+    "text": "that secant line pivots into a single tangent line.",
     "scene": 6
   },
   {
-    "start": 16203,
-    "end": 16240,
-    "text": "an instant.",
+    "start": 16212,
+    "end": 16409,
+    "text": "Finally, the limiting slope is the derivative\u2014giving us f",
     "scene": 6
   },
   {
-    "start": 16259,
-    "end": 16389,
-    "text": "The derivative is the tangent's exact slope.",
+    "start": 16410,
+    "end": 16571,
+    "text": "prime of one equals two, and the tangent line",
     "scene": 6
   },
   {
-    "start": 16408,
-    "end": 16550,
-    "text": "For our parabola, f prime of one is two,",
+    "start": 16572,
+    "end": 16689,
+    "text": "y equals two x minus one.",
     "scene": 6
   },
   {
-    "start": 16564,
-    "end": 16721,
-    "text": "and the tangent is y equals two x minus",
-    "scene": 6
-  },
-  {
-    "start": 16722,
-    "end": 16741,
-    "text": "one.",
-    "scene": 6
-  },
-  {
-    "start": 16760,
-    "end": 16819,
+    "start": 17106,
+    "end": 17165,
     "text": "Thank you for watching.",
-    "scene": 6
+    "scene": 7
   }
 ]
