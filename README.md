@@ -1,5 +1,4 @@
-### 🎬 Watch / Download Final Video
-- **[Click here to view or download SecantToTangent_Video.mp4](https://github.com/vanshika252007/M3_AnimationVideo_SecantToTangent_E25B071289/raw/main/SecantToTangent_Video.mp4)**
+
 
 
 
