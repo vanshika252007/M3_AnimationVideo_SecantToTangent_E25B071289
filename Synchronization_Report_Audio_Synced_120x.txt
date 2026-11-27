@@ -1,0 +1,72 @@
+SECANT-TO-TANGENT — AUDIO-SYNCHRONIZED 1.20x VERSION
+
+Deliverables
+- Final_Secant_Tangent_Video_Audio_Synced_120x.mp4
+- Final_Subtitles_Audio_Synced_120x.srt
+- Final_Narration.wav (unchanged narration master)
+
+Narration
+All nine narration chunks are included in script order, with 0.150 seconds
+between chunks. No speed changes were applied to the voice. The 48 kHz stereo
+PCM 24-bit narration master is 366.052 seconds (6:06.052).
+
+No.  Chunk label                                      Start       End
+1    How does a secant become a tangent               00:00.000   00:42.919
+2    Let's see the same idea on a curve               00:43.069   01:25.805
+3    Eight divided by two gives a slope of four       01:25.955   02:08.326
+4    At h equals one, the slope is three              02:08.476   02:47.085
+5    Instead, we ask what the slopes approach         02:47.235   03:41.413
+6    Factor h from the numerator                      03:41.563   04:24.038
+7    Now watch B approach A                           04:24.188   04:57.180
+8    A secant joins two points                        04:57.330   05:37.010
+9    Its limiting slope is the derivative            05:37.160   06:06.051
+
+Visual speed and timing
+All animated source sections, including the disclosure-card animation, are
+sped up 1.20x. Scene-ending frames are held to keep scene changes aligned
+with the unchanged narration. The output remains 6:06 so no narration is
+cut. The original 1.5-second fade-to-black before the disclosure is replaced
+by a hold on the visible Thank You scene.
+
+Output scene boundaries
+Opening                       00:00.000
+One instant, one exact speed  00:07.367
+Two points define a secant    00:46.233
+Move B, watch the slope       01:37.333
+The limit, step by step       03:01.833
+One point, the tangent        04:23.467
+Visual summary                05:16.833
+Thank You scene               05:50.050
+Disclosure card               06:00.050
+End                           06:06.050
+
+Subtitle alignment
+The 53 subtitle cues follow the approved narration text and are timed against
+a local transcript of the assembled audio. They are non-overlapping, span
+00:00.000-06:05.560, and contain no more than two lines each. Automatic
+alignment mapped 690 of 692 normalized script words; the two unrecognized
+"minus" tokens remain in the captions and were timed between neighboring
+recognized words.
+
+One narration-caption cue is displayed at a time in regular Avenir Next,
+25 px, off-white text. The original lower subtitle strip is masked while a
+new synchronized caption is active; original scene titles, graphs, and
+other animation text remain visible. Captions are burned into the MP4; the
+SRT is also supplied separately.
+
+Audio mix
+The cloned narration is the main audio track. The original video's audio was
+replaced; the project music bed remains beneath the narration and is extended
+with a two-second crossfade. The final mix measures -16.5 LUFS integrated and
+-6.4 dB true peak.
+
+Quality checks
+- MP4: H.264, 1920x1080, 60 fps; AAC stereo, 48 kHz.
+- Duration: 366.052 seconds; video stream: 21,963 frames.
+- Complete MP4 decode: passed with no errors.
+- Frames at 00:30 and 02:01 were visually reviewed for caption alignment and masking.
+- Black-frame scan: no sustained intervals; only the 0.10-second source
+  fade-in at the beginning was detected.
+- Subtitle cue order and overlap check: passed.
+- Original video, source subtitles, narration master, and source audio chunks
+  were not overwritten or deleted. No Git push was made.
